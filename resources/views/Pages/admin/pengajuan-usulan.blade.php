@@ -119,6 +119,11 @@
             Detail
         </a>
 
+        <a href="form-pelaksanaan"
+         class="bg-[#FFA41B] text-white text-xs px-3 py-1.5 rounded-md hover:bg-[#d98c00] transition">
+            Pelaksanaan
+        </a>
+
         <!-- Popup Modal -->
         <div 
             x-show="open"

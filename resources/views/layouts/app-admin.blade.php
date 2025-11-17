@@ -58,10 +58,10 @@
 <a
   href="{{ url('/pengajuan-usulan') }}"
   class="flex items-center gap-3 px-3 py-2 rounded-lg
-    {{ Request::is('pengajuan-usulan', 'form-usulan','review-usulan','detail-usulan','tambah-kop','notif-usulan','edit-usulan') ? 'bg-[#1C1F4A] text-white' : 'text-gray-600 hover:bg-[#E8EDFF]' }}"
+    {{ Request::is('pengajuan-usulan', 'form-usulan','review-usulan','detail-usulan','tambah-kop','notif-usulan','edit-usulan','form-pelaksanaan') ? 'bg-[#1C1F4A] text-white' : 'text-gray-600 hover:bg-[#E8EDFF]' }}"
 >
   <img 
-    src="{{ Request::is('pengajuan-usulan', 'form-usulan','review-usulan','detail-usulan','tambah-kop','notif-usulan','edit-usulan') ? asset('images/briefcase-white.png') : asset('images/briefcase.png') }}" 
+    src="{{ Request::is('pengajuan-usulan', 'form-usulan','review-usulan','detail-usulan','tambah-kop','notif-usulan','edit-usulan','form-pelaksanaan') ? asset('images/briefcase-white.png') : asset('images/briefcase.png') }}" 
     alt="Briefcase" 
     class="w-5 h-5"
   >
