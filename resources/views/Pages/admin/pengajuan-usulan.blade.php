@@ -20,33 +20,42 @@
     <h2 class="text-lg font-semibold text-[#2B3674] mb-6">PROGRES PENGAJUAN</h2>
 
     <div class="flex items-center justify-between w-full gap-2">
+
         @php
             $steps = [
-                'Pengajuan Usulan Kegiatan Pengembangan Kompetensi ASN',
-                'Menunggu Verifikasi Pengajuan Usulan Kegiatan Pengembangan Kompetensi ASN',
-                'Pengajuan Usulan Kegiatan Pengembangan Kompetensi ASN Diterima',
-                'Pelaksanaan Kegiatan Pengembangan Kompetensi ASN',
-                'Upload Bukti Hasil Pelaksanaan Kegiatan Pengembangan Kompetensi ASN',
-                'Peninjauan Pengakuan JP Dari Kegiatan Pengembangan Kompetensi ASN Yang Terlaksana',
-                'Proses Seleksi dan Sertifikasi Pengakuan JP Peserta Dapat Diakses',
+                'Pengajuan Usulan',
+                'Verifikasi Pengajuan Usulan',
+                'Pengajuan Usulan Diterima',
+                'Pelaksanaan Kegiatan',
+                'Upload Laporan Kegiatan',
+                'Peninjauan Pengakuan JP',
+                'Balasan & Sertifikasi',
             ];
         @endphp
 
         @foreach ($steps as $index => $step)
-            <div class="flex flex-col items-center text-center w-full">
+            <div class="flex flex-col items-center text-center w-full h-20 justify-between">
+
+                <!-- Number Circle -->
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-semibold
                     {{ $index == 0 ? 'bg-[#FFA41B] text-white' : 'bg-gray-200 text-gray-500' }}">
                     {{ $index + 1 }}
                 </div>
-                <p class="text-xs mt-2 {{ $index == 0 ? 'text-[#2B3674] font-medium' : 'text-gray-500' }}">
+
+                <!-- Step Text -->
+                <p class="text-xs leading-tight w-[90px] 
+                    {{ $index == 0 ? 'text-[#2B3674] font-medium' : 'text-gray-500' }}">
                     {{ $step }}
                 </p>
             </div>
 
             @if ($index < count($steps) - 1)
+                <!-- Line Connector -->
                 <div class="flex-1 h-[2px] bg-gray-300"></div>
             @endif
+
         @endforeach
+
     </div>
 </div>
 
