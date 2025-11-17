@@ -144,7 +144,7 @@
         <!-- Header Modal -->
         <div class="text-center mb-6">
             <div class="w-14 h-14 mx-auto mb-3 bg-[#E8EDFF] rounded-full flex items-center justify-center">
-                <img src="{{ asset('images/user-detail.png') }}" alt="User Icon" class="w-7 h-7">
+                <img src="{{ asset('images/bkpsdm.png') }}" alt="User Icon" class="w-7 h-7">
             </div>
             <h2 class="text-xl font-semibold text-[#1C1F4A]">
                 Detail Pengguna

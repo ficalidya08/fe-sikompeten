@@ -117,3 +117,7 @@ Route::get('/edit-user', function () {
 Route::get('/tambah-user', function () {
     return view('Pages.superadmin.tambah-user');
 });
+
+Route::get('/form-pelaksanaan', function () {
+    return view('Pages.admin.form-pelaksanaan');
+});

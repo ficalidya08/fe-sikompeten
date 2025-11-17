@@ -57,6 +57,9 @@
               <button class="bg-blue-500 text-white px-3 py-1 rounded-lg text-xs hover:bg-blue-600 transition">
                 <i class="fa-solid fa-eye mr-1"></i> Detail
               </button>
+              <button class="bg-purple-500 text-white px-3 py-1 rounded-lg text-xs hover:bg-purple-600 transition">
+                <i class="fa-solid fa-pen mr-1"></i> Update Pelaksanaan
+              </button>
             </div>
           </td>
         </tr>

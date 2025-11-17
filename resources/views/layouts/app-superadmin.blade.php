@@ -45,7 +45,7 @@
         <a
           href="{{ url('/dashboard-superadmin') }}"
           class="flex items-center gap-3 px-3 py-2 rounded-lg transition
-            {{ Request::is('dashboard-superadmin') ? 'bg-[#1C1F4A] text-white' : 'text-gray-600 hover:bg-[#E8EDFF]' }}"
+            {{ Request::is('dashboard-superadmin') ? 'bg-[#1C1F4A] text-white' : 'text--600 hover:bg-[#E8EDFF]' }}"
         >
           <img 
             src="{{ Request::is('dashboard-superadmin') ? asset('images/grid-white.png') : asset('images/grid.png') }}" 
@@ -90,7 +90,7 @@
         {{ Request::is('daftar-balasan') ? 'bg-[#1C1F4A] text-white' : 'text-gray-600 hover:bg-[#E8EDFF]' }}"
         >
         <img 
-        src="{{ Request::is('daftar-balasan') ? asset('images/briefcase-white.png') : asset('images/briefcase.png') }}" 
+        src="{{ Request::is('daftar-balasan') ? asset('images/File text-white.png') : asset('images/File text.png') }}" 
         alt="Daftar Balasan" 
         class="w-5 h-5"
         />
